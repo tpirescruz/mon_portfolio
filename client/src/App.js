@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route} from "react-router-dom";
-import logo from './logo.svg';
 import './App.css';
+import Base from './components/Base';
+
 
 function App() {
 
@@ -16,14 +17,12 @@ function App() {
     // }
 
     return (
-        <div className="all">
-            <h1>
-                Ce site est en cours de construction ... (mais c'est pour bientôt)
-            </h1>
-            <img src={logo}
-                    className="App-logo"
-                    alt="logo" />
-        </div>
+        <BrowserRouter>
+            <Switch>
+                <Base />
+            
+            </Switch>
+        </BrowserRouter>
     
         // <div className="App">
         //     <header className="App-header">

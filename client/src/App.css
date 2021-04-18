@@ -5,11 +5,14 @@
 .App-logo {
   height: 30vmin;
   pointer-events: none;
-}
+  filter: invert(1) hue-rotate(
+    262deg
+    );
+  }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
@@ -29,7 +32,7 @@
 }
 .all {
   background-color: #282c34;
-  color: #61dafb;
+  color: rgb(110, 66, 251);
 }
 
 body {
