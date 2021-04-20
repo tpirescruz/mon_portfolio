@@ -5,19 +5,17 @@
 .App-logo {
   height: 30vmin;
   pointer-events: none;
-  filter: invert(1) hue-rotate(
-    262deg
-    );
+  filter: saturate(0)
   }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 5s linear;
+    animation: App-logo-spin infinite 3s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #687999;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,12 +29,11 @@
   color: #61dafb;
 }
 .all {
-  background-color: #282c34;
-  color: rgb(110, 66, 251);
+  color: white;
 }
 
 body {
-  background-color: #282c34;
+  background-color: #2e2433;
   text-align: center;
   display: flex;
   flex-direction: column;
