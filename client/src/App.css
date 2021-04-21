@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@300;400;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -29,19 +32,53 @@
   color: #61dafb;
 }
 .all {
-  color: rgb(182, 181, 181);
+  color: rgb(255, 255, 255);
 }
 
 body {
-  background-color: #2e2433;
+  background-image: url(./stacked-waves-haikei.svg);
+  background-size: cover;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Raleway';
+  font-weight: 300;
+  overflow: hidden;
 }
+.bubble {
+  position: absolute;
+  bottom:-10px;
+  border-radius: 50px;
+  background-color: rgba(128, 0, 128, 0);
+  border: 2px solid white;
+  animation: pop infinite 2s linear;
+}
+.bubble-left {
+  left: 100px;
+}
+.bubble-right {
+  right: 200px;
+}
+.bubble-middle {
+  right: -10px;
+}
+.bubble2s{
+  animation: pop infinite 2s linear;
+}
+.bubble3s{
+  animation: pop infinite 3s linear;
+}
+.bubble6s {
+  animation: pop infinite 6s linear;
 
+}
+.bubble9s {
+  animation: pop infinite 9s linear;
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -50,3 +87,36 @@ body {
     transform: rotate(360deg);
   }
 }
+@keyframes pop {
+  0% {
+    width: 0px;
+    height: 0px;
+    transform: translateY(0px);
+  } 
+  25% {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50px);
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-100px);
+
+
+  } 
+  75% {
+    width: 40px;
+    height: 40px;
+    transform: translateY(-200px);
+
+  } 
+  100% {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-800px);
+
+
+  }
+}
+ 

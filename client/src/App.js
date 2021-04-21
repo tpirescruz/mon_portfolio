@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route} from "react-router-dom";
 import './App.css';
-import Base from './pages/Base';
+import Construction from './pages/Construction';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     return (
         <BrowserRouter>
             <Switch>
-                <Base />
+                <Construction />
             
             </Switch>
         </BrowserRouter>
