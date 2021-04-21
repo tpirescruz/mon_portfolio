@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from '../logo.svg';
 
+
+// const random = () => {
+//     const bubbleAnimation = document.getElementsByClassName;
+// }
+
 const Construction = () => {
     return (
         <div className="all">
@@ -14,8 +19,8 @@ const Construction = () => {
             <img src={logo}
                 className="App-logo"
                 alt="logo" />
-            <h1>
-                Ce site est en cours de construction ... <br></br>(mais c'est pour bientôt)
+            <h1 className="construction-txt">
+                Ce site est en cours de construction ... <br></br> <span>(mais c'est pour bientôt)</span>
                         </h1>
         </div>
     );
