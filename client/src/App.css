@@ -162,11 +162,11 @@ a[href]:not([href^='#'])::after {
   filter: saturate(0)
   }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 3s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #687999;
