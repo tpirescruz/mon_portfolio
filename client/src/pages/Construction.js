@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from '../logo.svg';
-import logoP from '../White logo.svg';
+import logo from '../logoPortfolioWhite.svg';
 
 
 // const random = () => {
@@ -17,7 +17,7 @@ const Construction = () => {
             <div className="bubble bubble-right bubble3s"></div>
             <div className="bubble bubble-middle bubble2s"></div>
             <div className="bubble bubble-right bubble3s"></div>
-            <img src={logoP}
+            <img src={logo}
                 className="App-logo"
                 alt="logo" />
             <h1 className="construction-txt">

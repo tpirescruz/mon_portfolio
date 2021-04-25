@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route} from "react-router-dom";
 import './App.css';
 import Construction from './pages/Construction';
+import NotFound from './pages/NotFound'
+import Parcours from './pages/Parcours'
 
 
 function App() {
@@ -19,8 +21,9 @@ function App() {
     return (
         <BrowserRouter>
             <Switch>
-                <Construction />
-            
+                <Route path="/" exact component={Construction} />
+                <Route path="/parcours" exact component={Parcours} />
+                <Route component={NotFound} />           
             </Switch>
         </BrowserRouter>
     

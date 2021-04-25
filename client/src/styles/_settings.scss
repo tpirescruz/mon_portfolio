@@ -1,10 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400;700&display=swap');
+$font-2: "Roboto";
+$font-1: "Raleway";
+
+$regular: 400;
+$bold: 700;
+$thin: 100;
 
 /* Set root font-size @10px equivalent */
 html {
-  font-size: .625em; /* fallback IE8+ */
-  font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+  font-size: 0.625em; /* fallback IE8+ */
+  font-size: calc(
+    1em * 0.625
+  ); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
   scroll-behavior: smooth;
 }
 
@@ -12,21 +20,21 @@ html {
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove focus for mouse users */
 :focus:not(:focus-visible) {
-outline: none;
+  outline: none;
 }
 
 /* Set core body defaults */
 body {
-min-height: 100vh;
-font-size: 1.6rem;
-text-rendering: optimizeSpeed;
-line-height: 1.5;
-color: #000;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: #000;
 }
 
 /* Remove default margin */
@@ -44,33 +52,33 @@ figcaption,
 blockquote,
 dl,
 dd {
-margin: 0;
+  margin: 0;
 }
 
 /* Remove default padding */
 ul[class],
 ol[class] {
-padding: 0;
+  padding: 0;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
 ol[class] {
-list-style: none;
+  list-style: none;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make medias easier to work with */
 img,
 video,
 audio {
-max-width: 100%;
-display: block;
-height: auto;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -78,7 +86,7 @@ input,
 button,
 textarea,
 select {
-font: inherit;
+  font: inherit;
 }
 
 /* Set cursor pointer */
@@ -86,69 +94,67 @@ label[for],
 button,
 input[type="submit"],
 select {
-cursor: pointer;
+  cursor: pointer;
 }
 
 /* Remove font style on address */
 address {
-font-style: normal;
+  font-style: normal;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-* {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
-  scroll-behavior: auto !important;
-}
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-clip: rect(1px, 1px, 1px, 1px);
-height: 1px;
-overflow: hidden;
-width: 1px;
-position: absolute;
-white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  white-space: nowrap;
 }
 
 /* Image replacement technique 2012 H5BP  - https://css-tricks.com/the-image-replacement-museum/ */
 
 .ir {
-font: 0/0 a;
-color: transparent;
-border: 0;
-text-shadow: none;
+  font: 0/0 a;
+  color: transparent;
+  border: 0;
+  text-shadow: none;
 }
 
 /* Phone links active only under 36em (576px) */
 a[href^="tel"] {
-white-space: nowrap;
-pointer-events: none;
-text-decoration: none;
-color: inherit;
+  white-space: nowrap;
+  pointer-events: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 36em) {
-a[href^="tel"] {
-  pointer-events: auto;
-  text-decoration: underline;
-}
+  a[href^="tel"] {
+    pointer-events: auto;
+    text-decoration: underline;
+  }
 }
 
 /* Print external URLs */
 @media print {
-a {
-  text-decoration: underline;
-}
+  a {
+    text-decoration: underline;
+  }
 
-a[href]:not([href^='#'])::after {
-  content: '('attr(href)')';
-}
-
-
+  a[href]:not([href^="#"])::after {
+    content: "(" attr(href) ")";
+  }
 }
 .App {
   text-align: center;
@@ -159,32 +165,22 @@ a[href]:not([href^='#'])::after {
   margin: auto;
   margin-bottom: 5rem;
   pointer-events: none;
-  filter: saturate(0)
-  }
-
-
-.App-header {
-  background-color: #687999;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  filter: saturate(0);
 }
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 3s linear;
+  }
+} */
 
 .App-link {
   color: #61dafb;
 }
-.all {
-  color: rgb(255, 255, 255);
-}
 
 body {
   /* background-image: url(./layered-waves-haikei.svg); */
-  background: linear-gradient(rgb(23, 1, 58) 70%,rgb(39, 3, 63)) ;
-  background-size: cover;
-  background-position: bottom;
+  background: linear-gradient(rgb(12, 0, 32) 50%, rgb(37, 4, 44));
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -194,17 +190,19 @@ body {
   overflow: hidden;
 }
 .construction-txt span {
-  font-family: 'Raleway';
   font-weight: 100;
-}
-.construction-txt {
-  font-family: 'Roboto';
-  font-weight: 300;
+  font-family: $font-1;
   font-size: 3rem;
 }
+.construction-txt {
+  font-family: $font-2;
+  font-weight: $regular;
+  font-size: 3.5rem;
+}
+
 .bubble {
   position: absolute;
-  bottom:-10px;
+  bottom: -10px;
   border-radius: 50px;
   background-color: rgba(128, 0, 128, 0);
   border: 2px solid white;
@@ -219,24 +217,22 @@ body {
 .bubble-middle {
   right: -10px;
 }
-.bubble2s{
+.bubble2s {
   animation: pop infinite 2s linear;
 }
-.bubble3s{
+.bubble3s {
   animation: pop infinite 3s linear;
 }
 .bubble6s {
   animation: pop infinite 6s linear;
-
 }
 .bubble9s {
   animation: pop infinite 9s linear;
-
 }
 .not-found {
-  color:white;
+  color: white;
 }
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
@@ -249,7 +245,7 @@ body {
     width: 0px;
     height: 0px;
     transform: translateY(0px);
-  } 
+  }
   25% {
     width: 20px;
     height: 20px;
@@ -259,21 +255,15 @@ body {
     width: 20px;
     height: 20px;
     transform: translateY(-100px);
-
-
-  } 
+  }
   75% {
     width: 40px;
     height: 40px;
     transform: translateY(-200px);
-
-  } 
+  }
   100% {
     width: 50px;
     height: 50px;
     transform: translateY(-800px);
-
-
   }
 }
- 
