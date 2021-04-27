@@ -3,9 +3,14 @@
 $font-2: "Roboto";
 $font-1: "Raleway";
 
+$thin: 100;
 $regular: 400;
 $bold: 700;
-$thin: 100;
+
+$color-1: rgb(12, 0, 32);
+$color-2: rgb(37, 4, 44);
+$color-3: white;
+$color-4: rgb(0, 156, 177);
 
 /* Set root font-size @10px equivalent */
 html {
@@ -156,114 +161,7 @@ a[href^="tel"] {
     content: "(" attr(href) ")";
   }
 }
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 20rem;
-  margin: auto;
-  margin-bottom: 5rem;
-  pointer-events: none;
-  filter: saturate(0);
-}
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 3s linear;
-  }
-} */
-
-.App-link {
-  color: #61dafb;
-}
 
 body {
-  /* background-image: url(./layered-waves-haikei.svg); */
-  background: linear-gradient(rgb(12, 0, 32) 50%, rgb(37, 4, 44));
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-}
-.construction-txt span {
-  font-weight: 100;
-  font-family: $font-1;
-  font-size: 3rem;
-}
-.construction-txt {
-  font-family: $font-2;
-  font-weight: $regular;
-  font-size: 3.5rem;
-}
-
-.bubble {
-  position: absolute;
-  bottom: -10px;
-  border-radius: 50px;
-  background-color: rgba(128, 0, 128, 0);
-  border: 2px solid white;
-  animation: pop infinite 2s linear;
-}
-.bubble-left {
-  left: 100px;
-}
-.bubble-right {
-  right: 200px;
-}
-.bubble-middle {
-  right: -10px;
-}
-.bubble2s {
-  animation: pop infinite 2s linear;
-}
-.bubble3s {
-  animation: pop infinite 3s linear;
-}
-.bubble6s {
-  animation: pop infinite 6s linear;
-}
-.bubble9s {
-  animation: pop infinite 9s linear;
-}
-.not-found {
-  color: white;
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes pop {
-  0% {
-    width: 0px;
-    height: 0px;
-    transform: translateY(0px);
-  }
-  25% {
-    width: 20px;
-    height: 20px;
-    transform: translateY(-50px);
-  }
-  50% {
-    width: 20px;
-    height: 20px;
-    transform: translateY(-100px);
-  }
-  75% {
-    width: 40px;
-    height: 40px;
-    transform: translateY(-200px);
-  }
-  100% {
-    width: 50px;
-    height: 50px;
-    transform: translateY(-800px);
-  }
+  background: linear-gradient(rgb(12, 0, 32) 70%, rgb(28, 4, 32));
 }

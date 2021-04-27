@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Switch, Route} from "react-router-dom";
-import './App.css';
 import Construction from './pages/Construction';
-import NotFound from './pages/NotFound'
-import Parcours from './pages/Parcours'
+import NotFound from './pages/NotFound';
+import Parcours from './pages/Parcours';
+import About from './pages/About'
+import Home from './pages/Home';
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Construction} />
+                <Route path="/" exact component={Home} />
                 <Route path="/parcours" exact component={Parcours} />
+                <Route path="/a-propos" exact component={About} />
                 <Route component={NotFound} />           
             </Switch>
         </BrowserRouter>

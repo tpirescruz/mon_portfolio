@@ -1,13 +1,11 @@
 import React from 'react';
+import Logo from './Logo';
 
-const navBar = () => {
+const NavBar = () => {
     return (
-        <div>
+        <div className="NavBar">
             <nav className="nav">
-                <figure>
-                    <img className="logo" src="" alt="Logo du portfolio"></img>
-                    <h1>Tom Pires Cruz</h1>
-                </figure>
+                <Logo/>
                 <ul className="nav-menu">
                     <li className="nav-item">Accueil</li>
                     <li className="nav-item">Développement Web</li>
@@ -19,4 +17,4 @@ const navBar = () => {
     );
 };
 
-export default navBar;
+export default NavBar;
