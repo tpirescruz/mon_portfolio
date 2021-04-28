@@ -1,48 +1,51 @@
 
 .NavBar {
     
-nav {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    border-bottom: white solid 1px;
-    padding: 0 3rem;
-    margin: 0 3rem;
-    font-family: $font-2;
-    font-weight: $bold;
+   
+    nav {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        border-bottom: white solid 1px;
+        padding: 0 5rem;
+        margin: 0 3rem;
+        font-family: $font-1;
+        font-weight: $bold;
 
-    img {
-        width: 8rem;
+        img {
+            width: 6rem;
+        }
+
+    }
+   
+    .nav-menu {
+        display: flex;
+        align-items: center;
+    }
+    .nav-item {
+        padding: 1rem 4rem;
+        font-size: 1.3rem;
+        // border-right:1px white solid ;
+    }
+    .nav-item::before {
+        content: '';
+        position: relative;
+        bottom: 0;
+        right: 0;
+        height: 1%;
+        width: 100%;
+        background-color: white;
     }
 
-}
-.nav-menu {
-    display: flex;
-    align-items: center;
-}
-.nav-item {
-    padding: 1rem;
-    margin: 0 1rem;
-}
-.nav-item::before {
-    content: '';
-    position: relative;
-    bottom: 0;
-    right: 0;
-    height: 1%;
-    width: 100%;
-    background-color: white;
-}
-
-.nav-active {
-    
-}
+    .nav-active {
+        
+    }
 
 
-.logo {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-align: left;
-}
+    .logo {
+        display: flex;
+        align-items: center;
+        color: white;
+        text-align: left;
+    }
 }
