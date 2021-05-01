@@ -5,7 +5,6 @@
     </clipPath>
   </defs>
   <g id="Taille_personnalisée_1" data-name="Taille personnalisée – 1" clip-path="url(#clip-Taille_personnalisée_1)">
-    <rect width="150" height="150" fill="rgba(255,255,255,0)"/>
     <path id="Tracé_2" data-name="Tracé 2" d="M70.5,0A70.511,70.511,0,0,1,125,25.77c1.191,1.436-75.434,2.542,3.57,4.705a70.519,70.519,0,0,1-5.679,87.175c-.723.814-59.472-.862-2.613,2.764-.522.528-1.3,1.284-2.1,2.023-1.519,1.407-169.06.193-4.977,4.191A70.528,70.528,0,0,1,0,70.5,70.976,70.976,0,0,1,2.527,51.727c.566-2.08,56.913.047,2.077-6.387.6-1.589,17.781-1.546,2.113-5,.775-1.665,1.8-3.621,2.978-5.648,0,0,.6-1.014,1-1.653A70.444,70.444,0,0,1,70.5,0Z" transform="translate(5 5)"/>
     <g id="Groupe_1" data-name="Groupe 1" transform="translate(3 10)">
       <line id="Ligne_1" data-name="Ligne 1" x1="39" y2="76" transform="translate(36.5 20.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>

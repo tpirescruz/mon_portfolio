@@ -1,16 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400;700&display=swap");
 
-$font-2: "Roboto";
 $font-1: "Raleway";
+$font-2: "Roboto";
 
 $thin: 100;
 $regular: 400;
 $bold: 700;
 
+%raleway-regular {
+  font-family: $font-1;
+  font-weight: 400;
+}
+%raleway-thin {
+  font-weight: 100;
+  font-family: $font-1;
+}
+%roboto-light {
+  font-family: $font-2;
+  font-weight: 300;
+}
+%roboto-bold {
+  font-family: $font-2;
+  font-weight: 700;
+}
+%roboto-regular {
+  font-family: $font-2;
+  font-weight: 400;
+}
+
 $color-1: rgb(12, 0, 32);
-$color-2: rgb(37, 4, 44);
+$color-2: rgb(61, 0, 31);
 $color-3: white;
 $color-4: rgb(0, 156, 177);
+
+.btn-primary {
+  transition: .3s;
+  font-family: $font-1;
+  font-weight: $regular;
+  color: $color-1;
+  padding: 1rem 4rem;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  &:hover {
+    transition: .3s;
+    background-color: transparent;  
+    color: white;
+  }
+
+
+}
+.btn-secondary {
+  transition: .3s;
+  font-family: $font-1;
+  font-weight: $regular;
+  color: white;
+  padding: 1rem 4rem;
+  background-color: $color-2;
+  border-radius: 5px;
+  border: 3px solid $color-2;
+  &:hover {
+    transition: .3s;
+    background-color: transparent;  
+    color: white;
+  }
+
+
+}
+.btn-alt {
+  transition: .3s;
+  font-family: $font-1;
+  font-weight: $regular;
+  color: black;
+  padding: 1rem 4rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 3px solid black;
+  &:hover {
+    transition: .3s;
+    background-color: black;  
+    color: white;
+  }
+
+
+}
+.btn-alt-secondary {
+  transition: .3s;
+  font-family: $font-1;
+  font-weight: $regular;
+  color: white;
+  padding: 1rem 4rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid white;
+  &:hover {
+    transition: .3s;
+    background-color: white;  
+    color: black;
+  }
+
+
+}
 
 /* Set root font-size @10px equivalent */
 html {
@@ -163,5 +253,7 @@ a[href^="tel"] {
 }
 
 body {
-  background: linear-gradient(rgb(12, 0, 32) 70%, rgb(28, 4, 32));
+  background: linear-gradient(295deg,rgb(17, 11, 24) 70%, rgb(26, 8, 49));
 }
+
+

@@ -1,11 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
   <defs>
     <clipPath id="clip-Taille_personnalisée_1">
-      <rect width="150" height="150"/>
     </clipPath>
   </defs>
   <g id="Taille_personnalisée_1" data-name="Taille personnalisée – 1" clip-path="url(#clip-Taille_personnalisée_1)">
-    <rect width="150" height="150" fill="rgba(255,255,255,0)"/>
     <g id="Groupe_1" data-name="Groupe 1" transform="translate(3 10)">
       <line id="Ligne_1" data-name="Ligne 1" x1="39" y2="76" transform="translate(36.5 20.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
       <line id="Ligne_2" data-name="Ligne 2" x2="77" transform="translate(36.5 96.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
