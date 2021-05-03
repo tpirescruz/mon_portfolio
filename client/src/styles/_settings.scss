@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&family=Roboto:wght@300;400;700&display=swap");
 
 $font-1: "Raleway";
 $font-2: "Roboto";
@@ -7,6 +7,10 @@ $thin: 100;
 $regular: 400;
 $bold: 700;
 
+%raleway-bold {
+  font-family: $font-1;
+  font-weight: 700;
+}
 %raleway-regular {
   font-family: $font-1;
   font-weight: 400;
@@ -28,20 +32,37 @@ $bold: 700;
   font-weight: 400;
 }
 
-$color-1: rgb(12, 0, 32);
-$color-2: rgb(61, 0, 31);
+$dark-blue: rgb(12, 0, 32);
+$dark-red: rgb(61, 0, 31);
+$deep-purple: rgb(26, 8, 49);
 $color-3: white;
-$color-4: rgb(0, 156, 177);
+$turquoise: rgb(0, 156, 177);
+$light-grey: rgb(240, 240, 240);
+
+h3 {
+  @extend %raleway-bold;
+  font-size: 4rem;
+  color: $deep-purple;
+  text-transform: uppercase;
+}
+h4 {
+  @extend %raleway-bold;
+  font-size: 2rem;
+  color: $deep-purple;
+  text-transform: uppercase;
+}
+
 
 .btn-primary {
   transition: .3s;
   font-family: $font-1;
   font-weight: $regular;
-  color: $color-1;
+  color: $dark-blue;
   padding: 1rem 4rem;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 3px solid white;
+  margin: 0 1rem;
   &:hover {
     transition: .3s;
     background-color: transparent;  
@@ -56,9 +77,11 @@ $color-4: rgb(0, 156, 177);
   font-weight: $regular;
   color: white;
   padding: 1rem 4rem;
-  background-color: $color-2;
+  background-color: $dark-red;
   border-radius: 5px;
-  border: 3px solid $color-2;
+  border: 3px solid $dark-red;
+  margin: 0 1rem;
+
   &:hover {
     transition: .3s;
     background-color: transparent;  
@@ -75,10 +98,12 @@ $color-4: rgb(0, 156, 177);
   padding: 1rem 4rem;
   background-color: transparent;
   border-radius: 5px;
-  border: 3px solid black;
+  border: 3px solid $deep-purple;
+  margin: 0 1rem;
+
   &:hover {
     transition: .3s;
-    background-color: black;  
+    background-color: $deep-purple;  
     color: white;
   }
 
@@ -93,6 +118,8 @@ $color-4: rgb(0, 156, 177);
   background-color: transparent;
   border-radius: 5px;
   border: 2px solid white;
+  margin: 0 1rem;
+
   &:hover {
     transition: .3s;
     background-color: white;  
@@ -101,7 +128,10 @@ $color-4: rgb(0, 156, 177);
 
 
 }
-
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
 /* Set root font-size @10px equivalent */
 html {
   font-size: 0.625em; /* fallback IE8+ */

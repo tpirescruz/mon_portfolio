@@ -1,36 +1,76 @@
 .header {
-    background-image: url(../../header-bg.png);
+    background-image: url(../../assets/header-bg.png);
     background-position: top;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    overflow-y: hidden;
     .header-content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
-        padding: 15rem 10rem 0 10rem;
+        padding: 15rem 15rem 0 15rem;
+    }
+    h2{
+        font-size: 4.2rem;
+        text-align: right;
+        @extend %raleway-thin;
     }
     h1{
-        font-size: 10rem;
+        font-size: 12rem;
         @extend %raleway-regular;
     }
-    text{
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         width: 50%;
-        text-align: right;
+        text-align: justify;
+        padding: 2rem;
+        
+
+        p{
+            padding: 2rem 0;
+            font-size: 1.7rem;
+        }
+        
+    }
+    hr {
+        width: 100%;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: flex-end;
     }
     .down-arrow {
+        transition: .5s;
         width: 5rem;
-        margin: 1rem;
+        margin: 2rem;
+        animation: CTA-up-down 1.5s linear infinite;
+        &:hover {
+            transition: .5s;
+            width: 7rem;
+            cursor: pointer;
+        }
     }
 
-    .arrow {
-        padding: 2rem;
-        border: 2px solid white;
-        border-radius: 50%;
+    
+
+}
+
+
+@keyframes CTA-up-down {
+    50% {
+        transform: translateY(2rem);
+        width: 5.2rem;
+    }
+    100% {
+        transform: translateY(0rem);
     }
 }
