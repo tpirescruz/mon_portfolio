@@ -4,34 +4,33 @@
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow-y: hidden;
+    padding: 15rem ;
+
     .header-content {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
-        padding: 15rem 15rem 0 15rem;
     }
     h2{
-        font-size: 4.2rem;
+        font-size: 2.7rem;
         text-align: right;
-        @extend %raleway-thin;
+        @extend %raleway-regular;
     }
     h1{
         font-size: 12rem;
-        @extend %raleway-regular;
+        @extend %raleway-thin;
     }
     .text{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 50%;
+        width: 40%;
         text-align: justify;
         padding: 2rem;
         
@@ -39,21 +38,25 @@
         p{
             padding: 2rem 0;
             font-size: 1.7rem;
+            @extend %roboto-light
         }
         
     }
     hr {
         width: 100%;
+        color: white;
     }
     .btn-container{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     .down-arrow {
+        position: absolute;
+        bottom: -10px;
         transition: .5s;
         width: 5rem;
         margin: 2rem;
-        animation: CTA-up-down 1.5s linear infinite;
+        animation: CTA-up-down 1.5s cubic-bezier(.17,.84,.44,1) infinite;
         &:hover {
             transition: .5s;
             width: 7rem;
@@ -70,7 +73,6 @@
 @keyframes CTA-up-down {
     50% {
         transform: translateY(2rem);
-        width: 5.2rem;
     }
     100% {
         transform: translateY(0rem);

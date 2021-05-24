@@ -1,12 +1,13 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 
-const Parcours = () => {
+const Illustration = () => {
     return (
         <div>
-            <NavBar/>
+            <NavBar />
+
         </div>
     );
 };
 
-export default Parcours;
+export default Illustration;

@@ -1,6 +1,7 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header'
-import Logo from '../components/Logo';
+// import Logo from '../components/Logo';
 import NavBar from '../components/NavBar';
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
                             </figure>
                             <div className="content">
                                 <h4>Illustration</h4>
-                                <p>Retrouvez tout mes travaux et projets de développement web. Mais aussi de l'intégration de maquettes ainsi que des créations en HTML - CSS - JS ou encore en React - Node.</p>
+                                <p>Constulez une collection d'illustrations traditionelles et digitales réalisées au fil des années.</p>
                                 <button className="btn-alt">Voir plus</button>
                             </div>
                         </div>
@@ -39,22 +40,22 @@ const Home = () => {
                             </figure>
                             <div className="content">
                                 <h4>Graphisme</h4>
-                                <p>Retrouvez tout mes travaux et projets de développement web. Mais aussi de l'intégration de maquettes ainsi que des créations en HTML - CSS - JS ou encore en React - Node.</p>
+                                <p>Vous trouverez dans cette section des productions graphiques. Principalement de la réalisation de logos et de pictogrammes. </p>
                                 <button className="btn-alt">Voir plus</button>
                             </div>
                         </div>
 
                     </div>
                 </section>
-                <section className="about">
+                <section  id='propos' className="about">
                     <h3> A propos</h3>
                     <hr></hr>
                     <figure>
                     </figure>
 
                 </section>
-                <section className="contact">
-                        <h3>Contactez-moi</h3>
+                <section id='contact-me' className="contact">
+                        <h3 >Contactez-moi</h3>
                         <hr></hr>
 
                         <div className="contact-container">
@@ -85,11 +86,11 @@ const Home = () => {
                                 </div>
                                 <a href="https://www.linkedin.com/in/tom-pirescruz/">LinkedIn - Tom Pires Cruz</a>
                             </div>
-
                         </div>
-                        <button><a href="/">Consultez mon CV</a></button>
+                        <button className='btn-alt'><a href="/">Consultez mon CV</a></button>
                 </section>
             </main>
+            <Footer />
         </div>
     );
 };

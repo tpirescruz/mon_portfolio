@@ -34,14 +34,18 @@ $bold: 700;
 
 $dark-blue: rgb(12, 0, 32);
 $dark-red: rgb(61, 0, 31);
-$deep-purple: rgb(26, 8, 49);
+$deep-purple: rgb(28, 10, 53);
 $color-3: white;
 $turquoise: rgb(0, 156, 177);
 $light-grey: rgb(240, 240, 240);
 
+p{
+  font-size: 1.7rem;
+}
+
 h3 {
-  @extend %raleway-bold;
-  font-size: 4rem;
+  @extend %raleway-thin;
+  font-size: 5rem;
   color: $deep-purple;
   text-transform: uppercase;
 }
@@ -55,14 +59,14 @@ h4 {
 
 .btn-primary {
   transition: .3s;
+  font-size: 1.5rem;
   font-family: $font-1;
-  font-weight: $regular;
+  font-weight: $bold;
   color: $dark-blue;
   padding: 1rem 4rem;
   background-color: white;
   border-radius: 5px;
-  border: 3px solid white;
-  margin: 0 1rem;
+  border: 2px solid white;
   &:hover {
     transition: .3s;
     background-color: transparent;  
@@ -74,13 +78,13 @@ h4 {
 .btn-secondary {
   transition: .3s;
   font-family: $font-1;
-  font-weight: $regular;
+  font-weight: $bold;
+  font-size: 1.5rem;
   color: white;
   padding: 1rem 4rem;
   background-color: $dark-red;
   border-radius: 5px;
   border: 3px solid $dark-red;
-  margin: 0 1rem;
 
   &:hover {
     transition: .3s;
@@ -93,41 +97,36 @@ h4 {
 .btn-alt {
   transition: .3s;
   font-family: $font-1;
-  font-weight: $regular;
-  color: black;
+  font-weight: $bold;
+  font-size: 1.5rem;
+  color: $deep-purple;
   padding: 1rem 4rem;
   background-color: transparent;
   border-radius: 5px;
-  border: 3px solid $deep-purple;
-  margin: 0 1rem;
-
+  border: 2px solid $deep-purple;
   &:hover {
     transition: .3s;
     background-color: $deep-purple;  
     color: white;
   }
-
-
 }
 .btn-alt-secondary {
   transition: .3s;
   font-family: $font-1;
-  font-weight: $regular;
+  font-weight: $bold;
+  font-size: 1.5rem;
   color: white;
   padding: 1rem 4rem;
   background-color: transparent;
   border-radius: 5px;
   border: 2px solid white;
-  margin: 0 1rem;
-
   &:hover {
     transition: .3s;
     background-color: white;  
     color: black;
   }
-
-
 }
+
 a {
   text-decoration: inherit;
   color: inherit;
@@ -284,6 +283,10 @@ a[href^="tel"] {
 
 body {
   background: linear-gradient(295deg,rgb(17, 11, 24) 70%, rgb(26, 8, 49));
+  font-size: 10px;
 }
 
+.nav-active {
+  border-bottom: solid 4px white;
+}
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import downArrow from '../assets/arrow-down.svg'
 
 const Header = () => {
@@ -8,16 +8,16 @@ const Header = () => {
                 <h1>PORT<br />FOL<br />IO</h1>
                 <div className='text'>
                     <h2>Bienvenue sur mon porfolio professionnel.</h2>
-                    <p> Vous y trouverez mon CV, mes références ou encore mon parcours. Mais aussi mes travaux et mes projets portant sur du développement web, du maquettage jusqu'à du graphisme en passant par de l'illustration traditionelle ou encore digitale. <br/> <br/> Cette application web est réalisée avec amour par moi-même. Sur ce je vous souhaite une bonne navigation</p>
+                    <p> Vous y trouverez : mon CV, mon parcours, mes travaux, mes projets de développement web, du maquettage, du graphisme, de l'illustration traditionelle et digitale. <br/> <br/> Cette application web est réalisée avec amour par moi-même. Sur ce je vous souhaite une bonne navigation</p>
                     <hr></hr>
                     <div className="btn-container">
-                        <button className='btn-alt-secondary'><a href="/">A propos</a></button>
-                        <button className='btn-primary'><a href="/">Contactez moi</a></button>
+                        <button className='btn-alt-secondary'><a href="#propos">A propos</a></button>
+                        <button className='btn-primary'><a href="#contact-me">Contactez moi</a></button>
                     </div>
                 </div>
             </div>
             <img className="down-arrow" src={downArrow} alt="scroll-down icon" href="#work"></img>
-
+        
         </div>
     );
 };

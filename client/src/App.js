@@ -3,8 +3,9 @@ import { BrowserRouter, Switch, Route} from "react-router-dom";
 import Construction from './pages/Construction';
 import NotFound from './pages/NotFound';
 import Parcours from './pages/Parcours';
-import About from './pages/About'
 import Home from './pages/Home';
+import Dev from './pages/Dev';
+import Illustration from './pages/Illustration';
 
 
 function App() {
@@ -23,8 +24,10 @@ function App() {
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Home} />
+                <Route path="/dev-web-front" exact component={Dev} />
+                <Route path="/illustration" exact component={Illustration} />
                 <Route path="/parcours" exact component={Parcours} />
-                <Route path="/a-propos" exact component={About} />
+                <Route path="/construction" exact component={Construction} />
                 <Route component={NotFound} />           
             </Switch>
         </BrowserRouter>

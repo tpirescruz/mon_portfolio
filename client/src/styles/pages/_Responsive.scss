@@ -1,45 +1,120 @@
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-   
-   h3 {
-       font-size: 3rem;
-   }
-    .NavBar {
-        nav {
-            margin: 1rem;
-            padding: 1rem;
-        }
-
+// Small devices (phones, 576px and up)
+@media (max-width: 576px) {
+  .NavBar {
+    nav {
+      .nav-menu {
+        display: none;
+      }
     }
-    
-    .header{
-        height: min-content;
+  }
 
-        .header-content{
-            padding: 5rem 2rem;
-            h1 {
-                font-size:8rem;
-            } 
-            .text {
-                width: 100%;
-            }
-            h2 {
-                font-size: 3rem;
-            } 
-            p {
-                font-size: 1.3rem;
-            }
-            button {
-                padding: .5rem 1.7rem;
-            }
-        }
+  h3 {
+    font-size: 3rem;
+  }
+
+  .header {
+    height: min-content;
+    padding: 5rem 2rem;
+
+    .header-content {
+      h1 {
+        font-size: 8rem;
+      }
+      .text {
+        width: 100%;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+      button {
+        padding: 0.5rem 1.7rem;
+      }
+    }
+  }
+
+  .work {
+    padding: 3rem;
+    .content {
+        flex-direction: column;
+        width: 90%;
+    }
+    button {
+      padding: 0.2rem 3rem;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .NavBar {
+    nav {
+      .nav-menu {
+        display: none;
+      }
+    }
+  }
+  .header-content {
+    h1 {
+      font-size: 8rem;
+    }
+    .text {
+      width: 100%;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    button {
+      padding: 0.5rem 1.7rem;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .NavBar {
+    nav {
+      .nav-menu {
+        display: none;
+      }
+    }
+  }
+  .header-content {
+    h1 {
+      font-size: 8rem;
+    }
+    .text {
+      width: 100%;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    button {
+      padding: 0.5rem 1.7rem;
     }
 
-    .work {
-        padding: 3rem;
-        button {
-            padding: .2rem 3rem;
-        }
-        .work-cards { 
-        }
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .NavBar {
+    nav {
+      .nav-item {
+        font-size: 1.5rem;
+      }
     }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
 }

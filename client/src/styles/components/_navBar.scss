@@ -6,50 +6,31 @@
     z-index: 100;
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         color: white;
         border-bottom: white solid 1px;
-        padding: 0 5rem;
         margin: 0 3rem;
         flex-wrap: wrap;
-
         @extend %raleway-regular;
-
         svg {
             width: 6rem;
             animation: stroke 2s linear infinite;
         }
-
     }
-   
     .nav-menu {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
     .nav-item {
-        padding: 1rem 4rem;
+        padding: 2rem ;
+        margin: 0 1rem ;
         font-size: 1.5rem;
-        // border-right:1px white solid ;
-    }
-    .nav-item::before {
-        content: '';
-        position: relative;
-        bottom: 0;
-        right: 0;
-        height: 1%;
-        width: 100%;
-        background-color: white;
-    }
-
-    .nav-active {
-        
-    }
-
-
-    .logo {
-        display: flex;
-        align-items: center;
-        color: white;
-        text-align: left;
+        cursor: pointer;
+        &:hover {
+            transition: .5s;
+            background-color: white;
+            color: $deep-purple;
+        }
     }
 }
